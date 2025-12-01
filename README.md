@@ -1,4 +1,4 @@
-# Our lady of Mount Carmel High School (landing page)
+# Sacred Heart College (landing page)
 React + Vite
 
 ## Hours
@@ -9,7 +9,7 @@ React + Vite
 
 
 # Application:
-Landing page of college - template №6
+Landing page of college - template №7
 
 
 ## Libraries:
@@ -19,7 +19,7 @@ Landing page of college - template №6
 
 
 ## Visit site: 
-https://nastiafox30.github.io/Our_Lady_of_Guadalupe_RC_High_School-landing-page/
+https://nastiafox30.github.io/Sacred_Heart_College-landing-page/
 
 ---------------------------------------------------------------
 _**Creator: Anastasiia Bzova 2025**_
