@@ -6,55 +6,55 @@ import slide2 from "../assets/images/slider2.jpg";
 import slide3 from "../assets/images/slider3.jpg";
 
 export const schoolInfo = {
-    name: "Mount Carmel High School",
-    shortName: "MCHS",
-    typeofSchool: "High School",
+    name: "Sacred Heart College",
+    shortName: "SHC",
+    typeofSchool: "College",
     logo: "logo.jpg",
     mainImage: mainPhoto, 
-    mainVideo: "https://www.youtube.com/embed/kyzTLwwn0NI?si=57hxmRArZEUVSJh_",
-    GoogleMapsEmbedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476.7498959691009!2d-89.13529147824399!3d17.072693400694412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5e431efdad6eb3%3A0x83d2ad616b1fbe2f!2sOur%20Lady%20Of%20Mount%20Carmel%20High%20School!5e0!3m2!1suk!2spl!4v1764543808406!5m2!1suk!2spl",
+    mainVideo: "",
+    GoogleMapsEmbedLink: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4457.464036456899!2d-89.075069!3d17.161738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5e67132da6e9cd%3A0x18407a606f65a1d0!2sSacred%20Heart%20College!5e1!3m2!1sen!2sbz!4v1764598136811!5m2!1sen!2sbz",
     
     about: {
-        welcomeText: "where we are committed to providing rigorous intellectual, spiritual, and physical formation within the Catholic Tradition, nurturing students to their full potential.",
-        historyText: "Mount Carmel High School (MCHS) was founded in 1990 to serve the youth of Our Lady of Mount Carmel Parish (OLMC), especially those who are underprivileged. Since its inception, MCHS has been dedicated to instilling Catholic Tradition and fostering the potential of students to become fruitful citizens and active members of the Church.",
-        footerText: "MCHS is focused on serving our community by ensuring a supportive environment that promotes academic rigor, spiritual growth, and the development of the whole person."
+        welcomeText: "where we are dedicated to providing a quality, grant-aided secondary education, owned and guided by the Roman Catholic Diocese of Belize and Belmopan.",
+        historyText: "Sacred Heart College (SHC) was founded in 1960 by Monsignor Facundo Castillo. The institution operates as a grant-aided high school, owned and managed by the Roman Catholic Diocese of Belize and Belmopan. In 2007, the school was formally incorporated, and its corporate powers were invested in a Board of Governors.",
+        footerText: "The Board of Governors is responsible for determining policies to ensure the efficient and responsible management of the institution, upholding the college's commitment to quality education and service."
     },
     contacts: {
-        country: "Belize",
-        address: "Corner Jose Marti Street & Mount Carmel Lane, Benque Viejo del Carmen Town",
-        phoneMain: "(+501) 670 2535",
-        phoneAdditional: "(+501) 823 2535",
-        email: "secretary@mchs.edu.bz",
+        country: "San Ignacio, Belize",
+        address: "Joseph Andrew Drive,PO Box 163, San Ignacio Town",
+        phoneMain: "(+501) 824-2102",
+        phoneAdditional: "(+501) 671-3325",
+        email: "president@shc.edu.bz",
         businessHours: {
-            weekdays: "Mon-Fri: 8:00 AM - 4:00 PM",
-            // saturday: "Saturday: 10:00 AM - 12:00 AM"
+            weekdays: "Mon-Fri: 8:00 AM - 12:00 AM / 1:00 PM - 5:00 PM",
+            // saturday: "Saturday: 12:00 AM - 4:00 AM"
         }
     },
     socials: {
-        facebook: "https://www.facebook.com/mountcarmelrecruitment16/",
+        facebook: "https://www.facebook.com/p/Sacred-Heart-College-Belize-61552581955974/",
         instagram: "",
-        linkedin: "",
+        linkedin: "https://ve.linkedin.com/company/sacred-heart-college",
         youtube: "",
     },
 
-    heroSlider: [
+heroSlider: [
         {
-            title: "INTELLECTUAL, SPIRITUAL, PHYSICAL",
-            subtitle: "Providing rigorous formation within the Catholic Tradition to nurture every student's potential.",
-            buttonText: "View Our Campus",
-            buttonLink: "#gallery",
+            title: "A TRADITION OF EXCELLENCE SINCE 1960",
+            subtitle: "Founded by Monsignor Facundo Castillo, providing quality Catholic education for over six decades.",
+            buttonText: "View Our History",
+            buttonLink: "#about",
             image: slide1
         },
         {
-            title: "SERVING OUR COMMUNITY",
-            subtitle: "Dedicated to supporting the youth of OLMC Parish, especially the underprivileged, since 1990.",
-            buttonText: "Our History",
-            buttonLink: "#about",
+            title: "DIOCESAN LEADERSHIP",
+            subtitle: "A grant-aided high school managed by the Roman Catholic Diocese of Belize and Belmopan.",
+            buttonText: "Learn About Our Management",
+            buttonLink: "#gallery",
             image: slide2
         },
         {
-            title: "FUTURE CITIZENS AND CHURCH MEMBERS",
-            subtitle: "Preparing students to lead fruitful lives and actively contribute to both society and the Church.",
+            title: "EFFICIENT AND RESPONSIBLE MANAGEMENT",
+            subtitle: "Governed by a dedicated Board focused on upholding high standards and ensuring the future of our institution.",
             buttonText: "Admissions",
             buttonLink: "#contact",
             image: slide3
