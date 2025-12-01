@@ -52,7 +52,7 @@ const Header = () => {
           <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li><a onClick={() => scrollToSection('home')}>Home</a></li>
             <li><a onClick={() => scrollToSection('about')}>About</a></li>
-            <li><a onClick={() => scrollToSection('statistics')}>Statistics</a></li>
+            {/* <li><a onClick={() => scrollToSection('statistics')}>Statistics</a></li> */}
             <li><a onClick={() => scrollToSection('gallery')}>Gallery</a></li>
             <li><a onClick={() => scrollToSection('map')}>Map</a></li>
             <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
