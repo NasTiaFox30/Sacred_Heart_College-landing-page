@@ -16,30 +16,29 @@ body {
 }
 
 :root {
-    --primary: #5D3E83;
+    --primary: #851414;
     --secondary: #FFC300;
-    --accent: #38761D;
-    --addition: #F8F7F3;
-    --dark-text: #212121;
+    --accent: #B52F2F;
+    --addition: #F5F5F5;
 
     --bg-color: var(--addition);
-    --bg-picture: rgba(93, 62, 131, 0.2);
+    --bg-picture: rgba(133, 20, 20, 0.2);
 
     --btn-color: var(--secondary);
     --btn-text-color: var(--primary);
 
-    --icon-color: var(--primary);
-    --section-name-color: var(--primary);
-    --section-text: var(--dark-text);
+    --icon-color: var(--secondary);
+    --section-name-color: var(--secondary);
+    --section-text: var(--primary);
     --section-text-invers: var(--addition);
 
     --section-color: var(--primary);
-    --gradient: linear-gradient(135deg, var(--primary) 0%, #3D2954 100%);
+    --gradient: linear-gradient(135deg, var(--primary) 0%, #6E1010 100%);
 
-    --header-color: rgba(93, 62, 131, 0.95);
-    --footer-color: #3D2954;
+    --header-color: rgba(133, 20, 20, 0.95);
+    --footer-color: #6E1010;
 
-    --header-menu-color: #5D3E83f7;
+    --header-menu-color: #851414f7;
 }
 
 .section {
