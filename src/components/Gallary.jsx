@@ -1,0 +1,75 @@
+import { useState } from 'react'
+import '../styles/Gallary.css'
+
+// Info
+import { schoolInfo } from '../data/schoolInfo'
+
+const MAX_VISIBLE_ITEMS = 10;
+
+const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null)
+  const [showAll, setShowAll] = useState(false); 
+
+  const images = import.meta.glob('../assets/images/photos/**.{jpg,jpeg,png}', { eager: true });
+
+  const galleryItems = Object.values(images).map((image, index) => ({
+    src: image.default,
+    caption: getCaptionByIndex(index)
+  }));
+
+  const visibleItems = showAll ? galleryItems : galleryItems.slice(0, MAX_VISIBLE_ITEMS);
+  const hasMore = galleryItems.length > MAX_VISIBLE_ITEMS;
+
+  function getCaptionByIndex(index) {
+    const captions = schoolInfo.galleryCaptions;
+    return captions[index] || `Gallery image ${index + 1}`;
+  }
+
+  return (
+    <section id="gallery" className="gallery-section section">
+      <div className="container">
+        <h2 className="section-title">{schoolInfo.typeofSchool } Gallery</h2>
+        <p className="section-subtitle">Take a look at our events and vibrant learning environment</p>
+        <div className="gallery-grid">
+          {visibleItems.map((item, index) => (
+            <div 
+              key={index} 
+              className="gallery-item"
+              onClick={() => setSelectedImage(item)}
+            >
+              <img src={item.src} alt={item.caption || `Gallery image ${index + 1}`} />
+              <div className="gallery-overlay">
+                <i className="fas fa-expand"></i>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {hasMore && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+            <button 
+              className="btn btn-primary" 
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? 'Hide' : `More photos (${galleryItems.length - MAX_VISIBLE_ITEMS})`}
+            </button>
+          </div>
+        )}
+      </div>
+
+      {selectedImage && (
+        <div className="lightbox" onClick={() => setSelectedImage(null)}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setSelectedImage(null)}>
+              &times;
+            </button>
+            <img src={selectedImage.src} alt={selectedImage.caption} />
+            {selectedImage.caption && <p>{selectedImage.caption}</p>}
+          </div>
+        </div>
+      )}
+    </section>
+  )
+}
+
+export default Gallery
